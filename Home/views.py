@@ -2,8 +2,7 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def home(request):
-    context = {'name':'vinay','course':'python'}
-    return render (request, 'index.html',context)
+    return render (request, 'index.html')
 def about(request):
     # return HttpResponse ("this is my about page")
     return render (request, 'about.html')
